@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/JasperPortfolio/static/css/main.1c5f2cc8.css",
-    "main.js": "/JasperPortfolio/static/js/main.785c59c2.js",
+    "main.css": "/JasperPortfolio/static/css/main.bbe486b1.css",
+    "main.js": "/JasperPortfolio/static/js/main.3dca72ac.js",
     "static/js/787.3503cf78.chunk.js": "/JasperPortfolio/static/js/787.3503cf78.chunk.js",
     "static/media/videobg.mp4": "/JasperPortfolio/static/media/videobg.c7ee9aa573ee9f027b6a.mp4",
     "static/media/darkbg.jpg": "/JasperPortfolio/static/media/darkbg.a7e2e5316ccef207811a.jpg",
@@ -29,19 +29,19 @@
     "static/media/reshot-icon-google-U3H6LWBGDC.svg": "/JasperPortfolio/static/media/reshot-icon-google-U3H6LWBGDC.a61c265036cd0209848b706bd0724e12.svg",
     "index.html": "/JasperPortfolio/index.html",
     "static/media/slick.woff": "/JasperPortfolio/static/media/slick.295183786cd8a1389865.woff",
-    "static/media/reshot-icon-contact-Y7UEDRJZX9.svg": "/JasperPortfolio/static/media/reshot-icon-contact-Y7UEDRJZX9.733b558d0ef43cdfb1face608f8fa88d.svg",
     "static/media/iconreact.svg": "/JasperPortfolio/static/media/iconreact.a060cbe85e50deda1d61452cee9de5b2.svg",
     "static/media/iconjavascript.svg": "/JasperPortfolio/static/media/iconjavascript.081325c6f229605dce15142ddd948d6d.svg",
     "static/media/icontailwind.svg": "/JasperPortfolio/static/media/icontailwind.1ff53afb0748cd483d5f0ed13029f287.svg",
     "static/media/reshot-icon-pen-tool-LCMSVR8HBE.svg": "/JasperPortfolio/static/media/reshot-icon-pen-tool-LCMSVR8HBE.bb8e88d878bbda842b5aab1b4da8197b.svg",
     "static/media/iconcss.svg": "/JasperPortfolio/static/media/iconcss.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
     "static/media/iconhtml.svg": "/JasperPortfolio/static/media/iconhtml.c1bb84e022ca9d76984d4b943bd678fd.svg",
-    "main.1c5f2cc8.css.map": "/JasperPortfolio/static/css/main.1c5f2cc8.css.map",
-    "main.785c59c2.js.map": "/JasperPortfolio/static/js/main.785c59c2.js.map",
+    "static/media/svgclose.svg": "/JasperPortfolio/static/media/svgclose.62f554ddd4a45772b98b7c59c44eba7d.svg",
+    "main.bbe486b1.css.map": "/JasperPortfolio/static/css/main.bbe486b1.css.map",
+    "main.3dca72ac.js.map": "/JasperPortfolio/static/js/main.3dca72ac.js.map",
     "787.3503cf78.chunk.js.map": "/JasperPortfolio/static/js/787.3503cf78.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1c5f2cc8.css",
-    "static/js/main.785c59c2.js"
+    "static/css/main.bbe486b1.css",
+    "static/js/main.3dca72ac.js"
   ]
 }
