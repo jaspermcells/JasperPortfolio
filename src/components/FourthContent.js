@@ -2,12 +2,12 @@ import React from "react";
 import { ReactComponent as Webdesignicon } from "./pictures/reshot-icon-pen-tool-LCMSVR8HBE.svg";
 import { ReactComponent as Brandingicon } from "./pictures/reshot-icon-digital-marketing-LBRZ9M6K5S.svg";
 import { ReactComponent as Uiicon } from "./pictures/reshot-icon-user-QLCUYJBKM3.svg";
-import { motion, useMotionValue, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 const FourthContent = () => {
 	return (
-		<div className="grid grid-flow-row w-full h-auto pb-72  bg-gray-900 text-white relative top-0 ">
+		<div className="grid grid-flow-row w-screen h-auto pb-72  bg-gray-900 text-white relative top-0 ">
 			<div className="w-full h-full grid text-center justify-self-center mt-20">
-				<div className=" tracking-widest font-semibold text-7xl font-Preahvihear uppercase mb-20  ">
+				<div className="  font-semibold text-[370%] font-Preahvihear uppercase mb-20 tracking-tighter ">
 					{" "}
 					My Services
 				</div>

@@ -1,14 +1,14 @@
 import React from "react";
-import { InlineWidget, PopupButton } from "react-calendly";
-import { motion, AnimatePresence } from "framer-motion";
+import { PopupButton } from "react-calendly";
+import { motion } from "framer-motion";
 const Scheduling = () => {
 	return (
 		<div
 			id="HireMe"
-			className=" w-full h-auto pb-72 bg-transparent grid justify-center "
+			className=" w-screen h-auto pb-72 bg-transparent grid justify-center "
 		>
 			{" "}
-			<div className=" w-full h-auto  bg-transparent grid justify-center items-center justify-items-center text-center my-20">
+			<div className=" w-screen h-auto  bg-transparent grid justify-center items-center justify-items-center text-center my-20">
 				<motion.h1
 					whileInView={{
 						opacity: 1,
@@ -39,22 +39,15 @@ const Scheduling = () => {
 							meeting{" "}
 						</motion.p>{" "}
 					</p>
-					<p className="relative bottom-40 left-0 xl:tracking-widest lg:tracking-widest md:tracking-widest sm:tracking-wider ">
+					<p className="relative bottom-40 left-0 xl:tracking-wide lg:tracking-wide md:tracking-widest sm:tracking-wider ">
 						with me{" "}
 					</p>
 				</motion.h1>
 
-				<div className=" p-4 pb-0 align-items-center h-[130%] overflow-hidden xl:block lg:block md:block sm:hidden xs:hidden text-4xl text-white bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-400 font-Preahvihear py-2 w-auto grid justify-center items-center content-center text-center justify-items-center relative rounded-lg uppercase ">
+				<div className=" p-4 pb-0 align-items-center h-[130%] px-4 overflow-hidden text-4xl text-white bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-400 font-Preahvihear py-2 w-auto grid justify-center items-center content-center text-center justify-items-center relative rounded-lg  animat-ping bottom-14 uppercase ">
 					<PopupButton
 						url="https://calendly.com/jasperbergantinos3/project-discussion"
-						text="Click here to schedule!"
-						rootElement={document.getElementById("root")}
-					></PopupButton>
-				</div>
-				<div className=" xl:hidden lg:hidden md:hidden sm:block xs:block text-4xl text-white bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-400 font-Preahvihear py-2 w-3/4 grid justify-center items-center text-center justify-items-center relative rounded-lg uppercase right-4 bottom-24 ">
-					<PopupButton
-						url="https://calendly.com/jasperbergantinos3/project-discussion"
-						text="Click here to schedule!"
+						text="CLICK ME"
 						rootElement={document.getElementById("root")}
 					></PopupButton>
 				</div>

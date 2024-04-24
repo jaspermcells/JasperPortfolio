@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { ReactComponent as Pic3svg } from "../components/pictures/IMG_0741_new-removebg-preview.svg";
 import { ReactComponent as Pic1svg } from "../components/pictures//IMG_7743_2-removebg-preview.svg";
 import { ReactComponent as Pic2svg } from "../components/pictures/gg-removebg-preview.svg";
-import { easeIn, motion, useSpring, Animated } from "framer-motion";
+import { motion } from "framer-motion";
 
 const thirdcontent = (props) => {
 	var settings = {
@@ -30,7 +30,7 @@ const thirdcontent = (props) => {
 	};
 
 	return (
-		<div id="About" className="w-full h-auto bg-gray-900 pb-40">
+		<div id="About" className="w-screen h-auto bg-gray-900 pb-40">
 			<div className="w-1/2 lg:w-10/12 md:w-full sm:w-full xs:w-full  h-full pb-10 bg-gray-900 grid  xl:grid-cols-1 grid-cols-1  justify-items-center items-center text-4xl font-extrabold tracking-widest font-lilitaOne text-yellow-500   shadow-slate-500 xl:pt-10 relative  lg:ml-36 lg:justify-items-center xl:w-10/12">
 				<motion.div
 					whileInView={{
@@ -64,7 +64,7 @@ const thirdcontent = (props) => {
 									opacity: 1,
 									x: 0,
 									rotate: 0,
-									transition: { delay: 0.3, duration: 0.7 },
+									transition: { delay: 0.4, duration: 0.7 },
 								}}
 								initial={{ opacity: 0, x: 100, rotate: -50 }}
 								viewport={{ once: true, amount: 0.3 }}
@@ -72,7 +72,7 @@ const thirdcontent = (props) => {
 							></motion.div>
 							<Slider {...settings} className="relative  ">
 								<div className="  relative bg-transparent">
-									<Pic1svg className="  w-10/12 h-10/12  xs:h-3/4 xs:mt-20 absolute fill-current xs:ml-16 ml-28 mb-72  bg-transparent" />
+									<Pic1svg className="  w-10/12 h-10/12   xs:h-3/4 xs:mt-20 absolute left-14 fill-current xs:ml-16 ml-28 mb-72  bg-transparent" />
 									<img
 										src={firstpic}
 										alt="jasperito"
@@ -93,7 +93,7 @@ const thirdcontent = (props) => {
 									<img
 										src={thirdpic}
 										alt="jasperito"
-										className="relative bg-transparent"
+										className="relative bg-transparent top-20"
 									></img>
 								</div>
 							</Slider>
@@ -107,16 +107,16 @@ const thirdcontent = (props) => {
 							transition: { delay: 0.3, duration: 0.6 },
 						}}
 						initial={{ opacity: 0, x: 100, rotate: 30 }}
-						viewport={{ once: false, amount: 0.3 }}
+						viewport={{ once: true, amount: 0.3 }}
 						className=" bg-transparent  w-[90%] h-[auto] shadow-lg xl:shadow-orange-700 hover:shadow-2xl hover:shadow-yellow-500 xs:shadow-orange-600 lg:shadow-orange-600 md:shadow-orange-700 sm:shadow-orange-800 rounded-lg grid grid-cols-1 text-lg text-white  tracking-wider font-light items-center justify-items-center relative pb-10 font-sans lg:w-full  ml-36  transition duration-500 top-16"
 					>
 						<motion.div
 							whileInView={{
 								opacity: 1,
-								x: 0,
+
 								transition: { delay: 0.3, duration: 0.7 },
 							}}
-							initial={{ opacity: 0, x: 100 }}
+							initial={{ opacity: 0 }}
 							viewport={{ once: false, amount: 0.5 }}
 							className="w-10/12 h-auto leading-2 relative my-12  items-center justify-items-stretch font-Preahvihear font-light tracking-wider text-justify text-[80%] 	 "
 						>

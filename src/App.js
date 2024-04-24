@@ -7,13 +7,11 @@ import Firstcontent from "./components/Firstcontent";
 import Secondcontent from "./components/Secondcontent";
 import Thirdcontent from "./components/Thirdcontent";
 import Fourthcontent from "./components/FourthContent";
-import Dropdown from "./components/Dropdown";
-import Card from "./components/Card";
+
 import Iconslider from "./components/Iconslider";
 import Resume from "./components/Resume";
 import Projects from "./components/Projects";
-import ScrollAnimation from "./components/ScrollAnimation";
-import TextAnimator from "./components/TextAnimator";
+
 import Scheduling from "./components/Scheduling";
 import { Stars } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
@@ -39,11 +37,9 @@ function App() {
 			repeat: Infinity,
 			repeatType: "mirror",
 		});
-	}, []);
+	}, [color]);
 	const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #020617 50%, ${color})`;
-	const border = useMotionTemplate`1px solid ${color}`;
-	const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
-	const options = ["Option 1", "Option 2", "Option 3"];
+
 	const [isScrolled, setIsScrolled] = useState(false);
 
 	// Create an effect that listens for scroll events
@@ -74,17 +70,13 @@ function App() {
 
 	return (
 		<React.Fragment>
-			<div className="bg-transparent w-full h-full relative grid grid-cols-1 pb-40">
+			<div className="bg-transparent w-auto h-full m-0 p-0 relative grid grid-cols-1 pb-40">
 				<Navbar />
 				<motion.div
 					style={{
 						backgroundImage,
 					}}
-					className={
-						isScrolled
-							? "bg-slate-200 grid xl:grid-flow-col xl:grid-cols-2  md:grid-flow-col sm:grid-flow-row xs:grid-flow-row md:grid-cols-1 sm:grid-cols-1 xs:grid-cols-1 lg:grid-flow-col grid-cols-2 drop-shadow-2xl shadow-orange-800"
-							: "bg-transparent grid xl:grid-flow-col xl:grid-cols-2  md:grid-flow-col sm:grid-flow-row xs:grid-flow-row md:grid-cols-1 sm:grid-cols-1 xs:grid-cols-1 lg:grid-flow-col grid-cols-2 drop-shadow-2xl shadow-orange-800"
-					}
+					className="w-screen bg-slate-200 grid xl:grid-flow-col xl:grid-cols-2  md:grid-flow-col sm:grid-flow-row xs:grid-flow-row md:grid-cols-1 sm:grid-cols-1 xs:grid-cols-1 lg:grid-flow-col grid-cols-2 drop-shadow-2xl shadow-orange-800"
 				>
 					<Firstcontent />
 					<Secondcontent />
@@ -95,7 +87,7 @@ function App() {
 					</div>
 				</motion.div>
 				<Thirdcontent person={aboutMe} />
-				<div className="w-full h-auto bg-zinc-900 grid justify-center items-center justify-items-center pb-20 sticky">
+				<div className="w-screen h-auto bg-zinc-900 grid justify-center items-center justify-items-center pb-20 sticky">
 					<Resume />
 
 					<Iconslider />
@@ -110,17 +102,13 @@ function App() {
 					strength={-600}
 					bgImage={darkbg}
 					blur={2}
-					bgImageSize="contain"
+					bgImageSize="cover"
+					className="w-screen"
 				>
 					<div className="w-screen h-auto grid justify-center items-center justif-items-center">
 						<Scheduling />
 					</div>
 				</Parallax>
-
-				<div className="w-3/4 h-auto text-7xl font-Preahvihear text-white ">
-					{" "}
-					Welcome
-				</div>
 			</div>
 		</React.Fragment>
 	);

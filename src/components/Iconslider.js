@@ -9,12 +9,7 @@ import iconreact from "./pictures/iconreact.svg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import {
-	useMotionTemplate,
-	useMotionValue,
-	motion,
-	animate,
-} from "framer-motion";
+import { motion } from "framer-motion";
 const Iconslider = () => {
 	var settings = {
 		infinite: true,
@@ -37,14 +32,14 @@ const Iconslider = () => {
 		],
 	};
 	return (
-		<div className="grid items-center align-center grid-cols-1 text-yellow-500 text-center mt-10 mb-10 ">
-			<h1 className="text-5xl uppercase font-Preahvihear tracking-wide text-slate-100 ml-4 text-7xl">
+		<div className="grid items-center align-center grid-cols-1 text-yellow-500 text-center mt-10 mb-10 relative ">
+			<h1 className="text-5xl uppercase font-Preahvihear tracking-wide text-slate-100 ml-4  xs:visble xl:hidden md:visible">
 				Tech Stack
 			</h1>
 			<div class="hidden lg:block xl:block ">
 				<Slider
 					{...settings}
-					className="relative grid items-center align-center  justify-center lg:w-[70%] lg:w-[70%] h-[200%] lg:left-[16%]  xl:left-[15%] md: mt-10 "
+					className="relative grid items-center align-center  justify-center lg:w-[70%] h-[200%] lg:left-[16%]  xl:left-[15%] md: mt-10 "
 				>
 					{" "}
 					<div className="slick-slide   relative  ">
@@ -121,7 +116,7 @@ const Iconslider = () => {
 					</div>
 				</Slider>
 			</div>
-			<div class=" lg:hidden xl:hidden grid grid-cols-1 md:grid-cols-2 justify-center justify-items-center items-center text-center  xs:gap- sm:gap-5 md:gap-4 md:left-52 mt-10 md:w-1/2 w-full xs:w-full sm:w-full  relative ">
+			<div class=" lg:hidden xl:hidden grid grid-cols-1 md:grid-cols-4 justify-center justify-items-center items-center text-center  xs:gap- sm:gap-5 md:gap-10 m-40  mt-20 md:w-3/4 w-full xs:w-full sm:w-full  relative md:right-14 xs:right-40  ">
 				<motion.div
 					whileInView={{
 						opacity: 1,

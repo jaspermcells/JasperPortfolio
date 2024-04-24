@@ -1,5 +1,5 @@
-import React, { useRef, useTransform } from "react";
-import { motion, useMotionValue, useScroll } from "framer-motion";
+import React, { useRef } from "react";
+import { motion, useScroll } from "framer-motion";
 const Reachout = () => {
 	const ref = useRef(null);
 	const { scrollYProgress } = useScroll({

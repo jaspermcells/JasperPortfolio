@@ -20,9 +20,9 @@ const Resume = () => {
 	};
 
 	return (
-		<div id="Resume" className="relative h-screen w-full bg-white grid">
+		<div id="Resume" className="relative h-auto w-screen bg-black grid">
 			<video
-				className="absolute top-0 left-0 w-full h-full object-cover bg-green-200 filter contrast-[140%] brightness-[90%] grayscale	text-white"
+				className="relative top-0 left-0 w-screen h-screen object-cover bg-green-200 filter contrast-[140%] brightness-[90%] grayscale	text-white"
 				autoPlay
 				loop
 				muted

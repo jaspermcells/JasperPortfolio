@@ -10,31 +10,30 @@ const Projects = () => {
 
 	const projectTitleCoffee = "Don Juanito Coffeeshop";
 	const projectTitleTodo = "To do List";
-	const projectCoffeeTags = [
-		"Coffee",
-		"Landing Page",
-		"ReactJS",
-		"TailwindCSS",
+
+	const data = [
+		{
+			projectdesc: projectdesTodo,
+			src: todolistWebsite,
+			title: projectTitleTodo,
+			tags: ["localstorage", "Sorting", "ReactJS", "TailwindCSS"],
+		},
+		{
+			projectdesc: projectdesCoffee,
+			src: coffeeWebsite,
+			title: projectTitleCoffee,
+
+			tags: ["Coffee", "Landing Page", "ReactJS", "TailwindCSS"],
+		},
 	];
-	const projectTodoTags = ["localstorage", "Sorting", "ReactJS", "TailwindCSS"];
+
 	return (
 		<div
 			id="Projects"
 			className=" lg:w-[60%] xl:w-[60%] xs:w-[80%] h-full text-5xl grid justify-center text-center items-center font-Preahvihear uppercase text-yellow-400 gap-12 justify-items-center  relative "
 		>
 			<h1 className="mb-10 text-slate-100 mt-40 text-7xl"> Projects</h1>
-			<ProjectsCard
-				projectdesc={projectdesTodo}
-				src={todolistWebsite}
-				title={projectTitleTodo}
-				tags={projectTodoTags}
-			/>
-			<ProjectsCard
-				projectdesc={projectdesCoffee}
-				src={coffeeWebsite}
-				title={projectTitleCoffee}
-				tags={projectCoffeeTags}
-			/>
+			<ProjectsCard data={data} />
 		</div>
 	);
 };
