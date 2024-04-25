@@ -11,11 +11,11 @@ import Fourthcontent from "./components/FourthContent";
 import Iconslider from "./components/Iconslider";
 import Resume from "./components/Resume";
 import Projects from "./components/Projects";
-
+import Banner from "./components/Banner";
 import Scheduling from "./components/Scheduling";
 import { Stars } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import { Parallax } from "react-parallax";
+
 import darkbg from "./components/pictures/darkbg.jpg";
 import Reachout from "./components/Reachout";
 import {
@@ -70,13 +70,14 @@ function App() {
 
 	return (
 		<React.Fragment>
-			<div className="bg-transparent w-auto h-full m-0 p-0 relative grid grid-cols-1 pb-40">
+			<div className="bg-transparent w-screen h-screen  relative grid grid-cols-1 m-0 p-0 overflow-x-hidden pb-10">
 				<Navbar />
+
 				<motion.div
 					style={{
 						backgroundImage,
 					}}
-					className="w-screen bg-slate-200 grid xl:grid-flow-col xl:grid-cols-2  md:grid-flow-col sm:grid-flow-row xs:grid-flow-row md:grid-cols-1 sm:grid-cols-1 xs:grid-cols-1 lg:grid-flow-col grid-cols-2 drop-shadow-2xl shadow-orange-800"
+					className="w-full bg-slate-200 grid xl:grid-flow-col xl:grid-cols-2  md:grid-flow-col sm:grid-flow-row xs:grid-flow-row md:grid-cols-1 sm:grid-cols-1 xs:grid-cols-1 lg:grid-flow-col grid-cols-2 drop-shadow-2xl shadow-orange-800"
 				>
 					<Firstcontent />
 					<Secondcontent />
@@ -97,18 +98,10 @@ function App() {
 				<Fourthcontent />
 
 				<Reachout />
+
 				<HireMe />
-				<Parallax
-					strength={-600}
-					bgImage={darkbg}
-					blur={2}
-					bgImageSize="cover"
-					className="w-screen"
-				>
-					<div className="w-screen h-auto grid justify-center items-center justif-items-center">
-						<Scheduling />
-					</div>
-				</Parallax>
+
+				<Banner />
 			</div>
 		</React.Fragment>
 	);

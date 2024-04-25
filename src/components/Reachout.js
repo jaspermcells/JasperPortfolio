@@ -12,7 +12,7 @@ const Reachout = () => {
 				<motion.h1
 					ref={ref}
 					style={{ scale: scrollYProgress, opacity: scrollYProgress }}
-					className="w-screen font-Preahvihear h-full bg-transparent relative text-yellow-600 text-[250px] xl:text-[200px] lg:text-[250px] md:text-[300px] sm:text-[200px] xs:text-[150px] text-center grid items-center justify-items-center justify-center "
+					className="w-screen font-Preahvihear h-full bg-transparent relative text-yellow-600 text-[250px] xl:text-[170px] lg:text-[250px] md:text-[300px] sm:text-[150px] xs:text-[100px] text-center grid items-center justify-items-center justify-center "
 				>
 					Reach Out
 				</motion.h1>

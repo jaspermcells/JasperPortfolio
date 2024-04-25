@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 
 const Firstcontent = () => {
 	const [isScrolled, setIsScrolled] = useState(false);
-
+	const icons = [iconfb, iconig, icongoogle, icongithub, iconlinkedin];
 	// Create an effect that listens for scroll events
 	useEffect(() => {
 		// Function to update the state based on scroll position
@@ -44,7 +44,7 @@ const Firstcontent = () => {
 					}}
 					initial={{ opacity: 0, x: 50 }}
 					viewport={{ once: true, amount: 0.5 }}
-					className="bg-transparent lg:ml-32 relative md:left-10 text-center leading-5 pt-5 h-5  lg:text-4xl md:text-3xl xs:text-2xl sm:text-3xl  text-yellow-400 font-semibold xs:justify-self-center sm:justify-self-center lg:justify-self-start md:justify-self-start justify-self-center font-Preahvihear tracking-widest"
+					className="bg-transparent  relative xl:left-[23%] lg:left-[16%]   md:left-[20%] text-center  pt-5 h-5  lg:text-4xl md:text-3xl xs:text-2xl sm:text-3xl  text-yellow-400 font-semibold xs:justify-self-center sm:justify-self-center xl:justify-self-start lg:justify-self-start md:justify-self-start justify-self-center font-Preahvihear tracking-widest xs:text-center top-4 xs:top-[45%]"
 				>
 					{" "}
 					Hello!
@@ -57,11 +57,7 @@ const Firstcontent = () => {
 					}}
 					initial={{ opacity: 0, y: 100 }}
 					viewport={{ once: true, amount: 0.3 }}
-					className={
-						isScrolled
-							? " grid bg-transparent lg:ml-32 md:ml-10 lg:text-7xl  sm:text-4xl  xs:text-4xl md:text-[340%]  font-extrabold z-50 xs:justify-self-center sm:justify-self-center lg:justify-self-start md:justify-self-start justify-self-center font-Preahvihear justify-center  md:py-18 h-auto xs:left-0  xl:left-0 lg:left-0 md:left-0 sm:left-0 relative xl:w-3/4 xs:w-3/4  lg:w-3/4 md:w-full sm:w-full xl:text-left lg:text-left md:text-left  sm:text-center  xs:text-center"
-							: " grid bg-transparent lg:ml-32 md:ml-10 lg:text-7xl  sm:text-4xl  xs:text-4xl md:text-[340%]  font-extrabold z-50 xs:justify-self-center sm:justify-self-center lg:justify-self-start md:justify-self-start justify-self-center font-Preahvihear justify-center  md:py-18 h-auto xs:left-0  xl:left-0 lg:left-0 md:left-0 sm:left-0 relative xl:w-3/4 xs:w-3/4  lg:w-3/4 md:w-full sm:w-full xl:text-left lg:text-left md:text-left  sm:text-center  xs:text-center"
-					}
+					className=" grid bg-transparent relative  xl:left-[20%] lg:left-[10%] md:left-[20%] xs:left-[-2%]  xl:justify-self-start lg:justify-self-start md:justify-self-start xs:justify-self-center sm:justify-self-center sm:text-center xs:text-center  xl:text-[400%] lg:text-[350%] md:text-[300%] sm:text-[300%] xs:text-[250%]   font-extrabold z-50 font-Preahvihear leading-tight  w-1/2 "
 				>
 					{" "}
 					I am Jasper Bergantinos
@@ -74,7 +70,7 @@ const Firstcontent = () => {
 					}}
 					initial={{ opacity: 0, x: -20 }}
 					viewport={{ once: true, amount: 1 }}
-					className="bg-transparent w-[70%] lg:ml-32 md:ml-10 ml-32 xs:ml-0 font-thin xs:justify-self-center sm:justify-self-center lg:justify-self-start md:justify-self-start justify-self-center text-yellow-400 font-Preahvihear tracking-wider text-lg lg:text-base  xs:text-sm xs:text-yellow-500  xl:text-left lg:text-left md:text-left sm:text-left xs:text-justify  leading-6 relative bottom-8 "
+					className="bg-transparent w-[70%]   xl:left-[20%] lg:left-[10%] md:left-[20%]  xs:justify-self-center sm:justify-self-center lg:justify-self-start md:justify-self-start justify-self-center text-yellow-400 font-Preahvihear tracking-wide text-lg lg:text-base md:text-[80%] sm:text-[75%]  xs:text-[65%] xs:text-yellow-500  xl:text-left lg:text-left md:text-left sm:text-left xs:text-justify  leading-6 relative bottom-8 	xs:bottom-[40%]"
 				>
 					{" "}
 					Mabuhay!! Welcome to my website portfolio. I am a frontend developer
@@ -89,55 +85,21 @@ const Firstcontent = () => {
 					}}
 					initial={{ opacity: 0, y: -100 }}
 					viewport={{ once: true, amount: 1 }}
-					className="bg-slate-700 rounded-2xl  grid justify-items-center items-center align-items-center  justify-self-center justify-stretch h-1/2   border-yellow-600 border-2 w-[65%] relative bottom-20"
+					className="bg-slate-700 rounded-2xl xl:left-[3%] lg:left-[-6%] md:left-[-0%]  grid justify-items-center items-center align-items-center  justify-self-center justify-stretch h-1/2   border-yellow-600 border-2 w-[65%] relative bottom-20 xl:w-[65%] lg:w-[60%] xs:bottom-[100%]"
 				>
 					{" "}
 					<ul className="grid grid-cols-6 justify-center justify-items-center items-center text-center  w-full left-10 relative   ">
-						<li className="xs:w-10/12  grid justify-center justify-items-center z-50">
-							<a href=" https://www.facebook.com/jasper.bergantinos">
-								<img
-									alt="fb"
-									src={iconfb}
-									className="w-8 h-8 lg:w-8 lg:h-8 sm:w-5 sm:h-5 hover:animate-bounce  "
-								></img>
-							</a>
-						</li>
-						<li className="xs:w-10/12 grid justify-center justify-items-center z-50">
-							<a href=" https://www.instagram.com/_jaspermcells/">
-								<img
-									alt="fb"
-									src={iconig}
-									className="w-8 h-8 lg:w-8 lg:h-8 sm:w-5 sm:h-5 hover:animate-bounce "
-								></img>
-							</a>
-						</li>
-						<li className="xs:w-10/12 grid justify-center justify-items-center z-50">
-							<a href="https://mail.google.com/mail/?view=cm&fs=1&to=jasperbergantinos3@gmail.com ">
-								<img
-									alt="fb"
-									src={icongoogle}
-									className="w-8 h-8 lg:w-8 lg:h-8 sm:w-5 sm:h-5 hover:animate-bounce "
-								></img>
-							</a>
-						</li>
-						<li className="xs:w-10/12 grid justify-center justify-items-center z-50">
-							<a href="https://github.com/jaspermcells">
-								<img
-									alt="fb"
-									src={icongithub}
-									className="w-8 h-8 lg:w-8 lg:h-8  sm:w-5 sm:h-5 hover:animate-bounce "
-								></img>
-							</a>
-						</li>
-						<li className="xs:w-10/12  grid justify-center justify-items-center z-50">
-							<a href=" https://www.linkedin.com/in/jas-permcells-a912452a7/">
-								<img
-									alt="fb"
-									src={iconlinkedin}
-									className="w-8 h-8 lg:w-8 lg:h-8 sm:w-5 sm:h-5  hover:animate-bounce  "
-								></img>
-							</a>
-						</li>
+						{icons.map((key) => (
+							<li className="xs:w-10/12  grid justify-center justify-items-center z-50">
+								<a href=" https://www.facebook.com/jasper.bergantinos">
+									<img
+										alt="fb"
+										src={key}
+										className="w-8 h-6 lg:h-6 lg:w-6 sm:w-5 sm:h-5 xs:w-4  hover:animate-bounce  relative right-3 "
+									></img>
+								</a>
+							</li>
+						))}
 					</ul>
 				</motion.div>
 			</div>

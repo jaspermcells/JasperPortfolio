@@ -19,7 +19,7 @@ const HireMe = () => {
 					initial={{ opacity: 0, scale: 0 }}
 					viewport={{ once: false, amount: 0.4 }}
 					ref={ref}
-					className="w-auto h-auto grid text-center text-[750%] items-center font-Preahvihear font-bold uppercase bg-transparent text-slate-100 relative  z-50 bottom-14  "
+					className="w-screen h-screen grid text-center text-[750%] items-center font-Preahvihear font-bold uppercase bg-transparent text-slate-100 relative   bottom-14  "
 				>
 					Hire Me
 				</motion.h1>

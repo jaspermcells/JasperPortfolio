@@ -41,7 +41,7 @@ const thirdcontent = (props) => {
 					initial={{ opacity: 0, y: -100 }}
 					viewport={{ once: false, amount: 0.5 }}
 					className="relative w-full   grid justify-items-center items-center
-		 h-10 mt-28 font-Preahvihear text-7xl uppercase"
+		 h-10 mt-28 font-Preahvihear xl:text-[180%] lg:text-[180%] md:text-[180%] xs:text-[150%] uppercase"
 				>
 					{" "}
 					About Me
@@ -57,7 +57,7 @@ const thirdcontent = (props) => {
 							}}
 							initial={{ opacity: 0, x: -100, rotate: 50 }}
 							viewport={{ once: false, amount: 0.3 }}
-							className="w-full	 h-auto border-r-4 border-t-4 border-orange-800 relative rounded-lg shadow-md shadow-orange-500 bg-transparent xl:w-3/4 top-10"
+							className="w-full lg:w-full xs:w-[80%]  relative md:left-[0%] sm:left-[18%] xs:left-[15%] h-auto border-r-4 border-t-4 border-orange-800 rounded-lg shadow-md shadow-orange-500 bg-transparent xl:w-3/4 top-10 "
 						>
 							<motion.div
 								whileInView={{
@@ -67,12 +67,12 @@ const thirdcontent = (props) => {
 									transition: { delay: 0.4, duration: 0.7 },
 								}}
 								initial={{ opacity: 0, x: 100, rotate: -50 }}
-								viewport={{ once: true, amount: 0.3 }}
+								viewport={{ once: false, amount: 0.3 }}
 								className="w-3/4 h-3/4 bg-transparent sm:mr-72  mt-10 ml-48  border-r-4 border-t-4 border-solid border-orange-900 shadow-xl shadow-orange-700 absolute rounded-lg xl:w-10/12 xl:h-10/12"
 							></motion.div>
 							<Slider {...settings} className="relative  ">
 								<div className="  relative bg-transparent">
-									<Pic1svg className="  w-10/12 h-10/12   xs:h-3/4 xs:mt-20 absolute left-14 fill-current xs:ml-16 ml-28 mb-72  bg-transparent" />
+									<Pic1svg className="  w-10/12 h-10/12   xs:h-3/4 xs:mt-20 absolute md:left-[-5%] sm:left-12 xs:left-[-5%] xs:top-[-10%] fill-current xs:ml-16 ml-28 mb-72  bg-transparent" />
 									<img
 										src={firstpic}
 										alt="jasperito"
@@ -80,7 +80,7 @@ const thirdcontent = (props) => {
 									></img>
 								</div>
 								<div className="relative ">
-									<Pic2svg className="w-10/12 absolute fill-current ml-28 mb-72" />
+									<Pic2svg className="w-10/12 absolute fill-current md:top-[-10%]  sm:left-20 sm:top-[10%] xs:left-[28%] xs:top-[-20%]" />
 									<img
 										src={secpic}
 										alt="jasperito"
@@ -89,7 +89,7 @@ const thirdcontent = (props) => {
 								</div>
 
 								<div className="relative">
-									<Pic3svg className="w-10/12 absolute  fill-current ml-28 mb-72 " />
+									<Pic3svg className="w-10/12 absolute  fill-current md:left-[25%] md:top-[-20%] sm:left-24 sm:top-[0%] xs:left-[28%] xs:top-[-35%] " />
 									<img
 										src={thirdpic}
 										alt="jasperito"
@@ -104,7 +104,7 @@ const thirdcontent = (props) => {
 							opacity: 1,
 							x: 0,
 							rotate: 0,
-							transition: { delay: 0.3, duration: 0.6 },
+							transition: { delay: 0.1, duration: 0.6 },
 						}}
 						initial={{ opacity: 0, x: 100, rotate: 30 }}
 						viewport={{ once: true, amount: 0.3 }}
@@ -118,7 +118,7 @@ const thirdcontent = (props) => {
 							}}
 							initial={{ opacity: 0 }}
 							viewport={{ once: false, amount: 0.5 }}
-							className="w-10/12 h-auto leading-2 relative my-12  items-center justify-items-stretch font-Preahvihear font-light tracking-wider text-justify text-[80%] 	 "
+							className="w-10/12 h-auto leading-2 relative my-12  items-center justify-items-stretch font-Preahvihear font-light tracking-wider text-justify text-[80%]  "
 						>
 							My name is Jasper Bergantinos. I am passionate in designing
 							websites and develop front-end stuffs. Outside from the tech

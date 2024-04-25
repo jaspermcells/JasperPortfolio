@@ -1,6 +1,7 @@
 import React from "react";
 import { PopupButton } from "react-calendly";
 import { motion } from "framer-motion";
+
 const Scheduling = () => {
 	return (
 		<div

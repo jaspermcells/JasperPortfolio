@@ -3,6 +3,7 @@ module.exports = {
 	content: ["./src/**/*.{html,js}"],
 	theme: {
 		extend: {
+			backgroundImage: { parallax: "url(./components/pictures/darkbg.jpg)" },
 			fontFamily: {
 				unifrakturCook: ["UnifrakturCook"],
 				lilitaOne: ["Lilita", "One"],
