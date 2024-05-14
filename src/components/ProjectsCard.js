@@ -28,7 +28,7 @@ const ProjectsCard = ({ data }) => {
 								<h2 className="card-title lg:text-[80%] relative  leading-9 tracking-tight  text-yellow-600  w-auto">
 									{item.title}
 								</h2>
-								<p className=" text-left md:text-[23%] sm:text-[22%] xs:text-[21%]  lg:tracking-wide md:tracking-normal xs:tracking-tight text-slate-200 font-sans    relative md:w-[85%] sm:w-[85%]   grid justify-center  lowercase   h-auto leading-1 xs:leading-5 mt-5  font-normal">
+								<p className=" text-left md:text-[25%] sm:text-[23%] xs:text-[22%]  lg:tracking-wide md:tracking-normal xs:tracking-tight text-slate-200 font-sans    relative md:w-[85%] sm:w-[85%]   grid justify-center  lowercase   h-auto leading-1 xs:leading-5 mt-5  font-normal">
 									{" "}
 									{item.projectdesc}
 								</p>
@@ -47,11 +47,11 @@ const ProjectsCard = ({ data }) => {
 									))}
 								</div>
 								<div className="xs:mt-2 md:mt-5 top-[40%] relative right-[6%] grid grid-cols-2 justify-end justify-items-end  items-start justify-self-end  sm:w-[40%]  xs:w-[50%] h-7">
-									<button className="text-white  uppercase border-pink-800 bg-pink-800 h-full rounded-lg  relative   md:text-[24%] sm:text-[23%] xs:text-[22%] lg:w-[60%]  sm:w-[60%] xs:w-[70%] ">
+									<button className="text-white  uppercase border-pink-800 hover:ring-offset-2 ring-2  ring-blue-600 ring-offset-blue-500 h-full rounded-lg  relative   md:text-[24%] sm:text-[23%] xs:text-[22%] lg:w-[60%]  sm:w-[60%] xs:w-[70%] ">
 										{" "}
 										Live
 									</button>
-									<button className=" text-white  uppercase  border-pink-800 bg-blue-800 h-full rounded-lg relative sm:right-3 xs:right-0 md:text-[24%] sm:text-[23%] xs:text-[22%]  lg:w-[60%] sm:w-[60%]  xs:w-[70%] ">
+									<button className=" text-white  uppercase ring-2  ring-pink-600 hover:ring-offset-2 ring-offset-pink-500 h-full rounded-lg relative   xl:right-7 lg:right-5 md:right-5 sm:right-4 xs:right-0 md:text-[24%] sm:text-[23%] xs:text-[22%]  lg:w-[60%] sm:w-[60%]  xs:w-[70%] ">
 										Code
 									</button>
 								</div>

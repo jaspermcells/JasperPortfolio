@@ -33,7 +33,7 @@ const Firstcontent = () => {
 	return (
 		<motion.div
 			id="Home"
-			className="w-full h-screen bg-transparent  grid grid-flow-col justify-items-center font-lilitaOne mt-28 "
+			className="w-full h-screen bg-transparent  grid grid-flow-col justify-items-center font-lilitaOne mt-28  overflow-x-hidden"
 		>
 			<div className="text-white mt-10 bg-transparent w-full h-auto grid grid-flow-row grid-row-6   ">
 				<motion.div
@@ -57,7 +57,7 @@ const Firstcontent = () => {
 					}}
 					initial={{ opacity: 0, y: 100 }}
 					viewport={{ once: true, amount: 0.3 }}
-					className=" grid bg-transparent relative  xl:left-[20%] lg:left-[10%] md:left-[20%] xs:left-[-2%]  xl:justify-self-start lg:justify-self-start md:justify-self-start xs:justify-self-center sm:justify-self-center sm:text-center xs:text-center  xl:text-[400%] lg:text-[350%] md:text-[300%] sm:text-[300%] xs:text-[250%]   font-extrabold z-50 font-Preahvihear leading-tight  w-1/2 "
+					className=" grid bg-transparent relative xl:justify-self-start lg:justify-self-start md:justify-self-start xs:justify-self-center sm:justify-self-center sm:text-center xs:text-center  xl:text-[400%] lg:text-[350%] md:text-[300%] sm:text-[300%] xs:text-[250%]   font-extrabold  font-Preahvihear leading-tight  xs:w-3/4 sm:w-1/2  lg:left-[11%] xl:left-[20%] md:left-[20%] xs:left-0 "
 				>
 					{" "}
 					I am Jasper Bergantinos
@@ -70,7 +70,7 @@ const Firstcontent = () => {
 					}}
 					initial={{ opacity: 0, x: -20 }}
 					viewport={{ once: true, amount: 1 }}
-					className="bg-transparent w-[70%]   xl:left-[20%] lg:left-[10%] md:left-[20%]  xs:justify-self-center sm:justify-self-center lg:justify-self-start md:justify-self-start justify-self-center text-yellow-400 font-Preahvihear tracking-wide text-lg lg:text-base md:text-[80%] sm:text-[75%]  xs:text-[65%] xs:text-yellow-500  xl:text-left lg:text-left md:text-left sm:text-left xs:text-justify  leading-6 relative bottom-8 	xs:bottom-[40%]"
+					className="bg-transparent w-[70%]   xl:left-[20%] lg:left-[10%] md:left-[20%]  xs:justify-self-center sm:justify-self-center lg:justify-self-start md:justify-self-start justify-self-center text-yellow-400 font-Preahvihear tracking-wide text-lg lg:text-base md:text-[80%] sm:text-[75%]  xs:text-[70%] xs:text-yellow-500  xl:text-left lg:text-left md:text-left sm:text-left xs:text-center  leading-6 relative bottom-8 	xs:bottom-[40%]"
 				>
 					{" "}
 					Mabuhay!! Welcome to my website portfolio. I am a frontend developer
@@ -85,7 +85,7 @@ const Firstcontent = () => {
 					}}
 					initial={{ opacity: 0, y: -100 }}
 					viewport={{ once: true, amount: 1 }}
-					className="bg-slate-700 rounded-2xl xl:left-[3%] lg:left-[-6%] md:left-[-0%]  grid justify-items-center items-center align-items-center  justify-self-center justify-stretch h-1/2   border-yellow-600 border-2 w-[65%] relative bottom-20 xl:w-[65%] lg:w-[60%] xs:bottom-[100%]"
+					className="bg-green-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 rounded-2xl xl:left-[3%] lg:left-[-6%] md:left-[-0%]  grid justify-items-center items-center align-items-center  justify-self-center justify-stretch h-1/2   border-yellow-600 border-2 w-[65%] relative bottom-20 xl:w-[65%] lg:w-[60%] xs:bottom-[100%] z-40"
 				>
 					{" "}
 					<ul className="grid grid-cols-6 justify-center justify-items-center items-center text-center  w-full left-10 relative   ">
@@ -95,7 +95,7 @@ const Firstcontent = () => {
 									<img
 										alt="fb"
 										src={key}
-										className="w-8 h-6 lg:h-6 lg:w-6 sm:w-5 sm:h-5 xs:w-4  hover:animate-bounce  relative right-3 "
+										className="w-8 h-6 lg:h-6 lg:w-6 sm:w-6 sm:h-6 xs:w-5 xs:h-5   hover:animate-bounce  relative right-3 "
 									></img>
 								</a>
 							</li>

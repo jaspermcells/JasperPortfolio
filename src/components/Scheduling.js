@@ -6,7 +6,7 @@ const Scheduling = () => {
 	return (
 		<div
 			id="HireMe"
-			className=" w-screen h-auto pb-72 bg-transparent grid justify-center "
+			className=" w-screen h-auto bg-slate-900 bg-transparent grid justify-center "
 		>
 			{" "}
 			<div className=" w-screen h-auto  bg-transparent grid justify-center items-center justify-items-center text-center my-20">

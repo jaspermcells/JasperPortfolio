@@ -7,7 +7,7 @@ const HireMe = () => {
 	return (
 		<div
 			id="Hire Me"
-			className=" w-screen h-screen grid justify-center items-center justify-items-center bg-zinc-900 sticky top-0 pb-[72px]"
+			className=" w-screen h-screen grid justify-center items-center justify-items-center bg-zinc-900 sticky top-0 pb-[0px]"
 		>
 			<div className="w-screen h-screen grid justify-center items-center justify-items-center bg-transparent ">
 				<motion.h1

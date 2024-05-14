@@ -70,14 +70,14 @@ function App() {
 
 	return (
 		<React.Fragment>
-			<div className="bg-transparent w-screen h-screen  relative grid grid-cols-1 m-0 p-0 overflow-x-hidden pb-10">
+			<div className="bg-transparent w-full h-screen  relative grid grid-cols-1 m-0 p-0  pb-10  ">
 				<Navbar />
-
 				<motion.div
 					style={{
 						backgroundImage,
 					}}
-					className="w-full bg-slate-200 grid xl:grid-flow-col xl:grid-cols-2  md:grid-flow-col sm:grid-flow-row xs:grid-flow-row md:grid-cols-1 sm:grid-cols-1 xs:grid-cols-1 lg:grid-flow-col grid-cols-2 drop-shadow-2xl shadow-orange-800"
+					className=" w-screen bg-slate-200 grid xl:grid-flow-col xl:grid-cols-2  md:grid-flow-col sm:grid-flow-row xs:grid-flow-row md:grid-cols-1 sm:grid-cols-1 xs:grid-cols-1 lg:grid-flow-col grid-cols-2 drop-shadow-2xl shadow-orange-800  
+					 "
 				>
 					<Firstcontent />
 					<Secondcontent />
@@ -87,8 +87,10 @@ function App() {
 						</Canvas>
 					</div>
 				</motion.div>
-				<Thirdcontent person={aboutMe} />
-				<div className="w-screen h-auto bg-zinc-900 grid justify-center items-center justify-items-center pb-20 sticky">
+				<div className="w-full h-full ">
+					<Thirdcontent person={aboutMe} />
+				</div>
+				<div className="w-screen bg-zinc-900 grid justify-center items-center justify-items-center text-center  sticky text-white text-2xls">
 					<Resume />
 
 					<Iconslider />
@@ -96,12 +98,12 @@ function App() {
 					<Projects />
 				</div>
 				<Fourthcontent />
-
 				<Reachout />
-
 				<HireMe />
-
 				<Banner />
+				<footer className="text-[25px] text-white text-center  font-lilitaOne tracking-wider grid justify-center items-center justify-items-center h-9 ">
+					<div> &#169;Jasper Bergantinos</div>
+				</footer>
 			</div>
 		</React.Fragment>
 	);

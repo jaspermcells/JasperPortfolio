@@ -30,7 +30,7 @@ const thirdcontent = (props) => {
 	};
 
 	return (
-		<div id="About" className="w-screen h-auto bg-gray-900 pb-40">
+		<div id="About" className="w-screen h-auto bg-gray-900 pb-40 ">
 			<div className="w-1/2 lg:w-10/12 md:w-full sm:w-full xs:w-full  h-full pb-10 bg-gray-900 grid  xl:grid-cols-1 grid-cols-1  justify-items-center items-center text-4xl font-extrabold tracking-widest font-lilitaOne text-yellow-500   shadow-slate-500 xl:pt-10 relative  lg:ml-36 lg:justify-items-center xl:w-10/12">
 				<motion.div
 					whileInView={{
@@ -57,7 +57,7 @@ const thirdcontent = (props) => {
 							}}
 							initial={{ opacity: 0, x: -100, rotate: 50 }}
 							viewport={{ once: false, amount: 0.3 }}
-							className="w-full lg:w-full xs:w-[80%]  relative md:left-[0%] sm:left-[18%] xs:left-[15%] h-auto border-r-4 border-t-4 border-orange-800 rounded-lg shadow-md shadow-orange-500 bg-transparent xl:w-3/4 top-10 "
+							className="w-full lg:w-full xs:w-[80%]  relative md:left-[0%] sm:left-[18%] xs:left-[15%] h-auto ring-r-8 ring-t-8 ring-orange-800 rounded-2xl shadow-md shadow-orange-500 bg-transparent xl:w-3/4 top-10 "
 						>
 							<motion.div
 								whileInView={{
@@ -68,11 +68,11 @@ const thirdcontent = (props) => {
 								}}
 								initial={{ opacity: 0, x: 100, rotate: -50 }}
 								viewport={{ once: false, amount: 0.3 }}
-								className="w-3/4 h-3/4 bg-transparent sm:mr-72  mt-10 ml-48  border-r-4 border-t-4 border-solid border-orange-900 shadow-xl shadow-orange-700 absolute rounded-lg xl:w-10/12 xl:h-10/12"
+								className="w-3/4 h-3/4 bg-transparent sm:mr-72  mt-10 ml-48  ring-2  ring-orange-900 shadow-xl shadow-orange-700 absolute rounded-lg xl:w-10/12 xl:h-10/12"
 							></motion.div>
 							<Slider {...settings} className="relative  ">
 								<div className="  relative bg-transparent">
-									<Pic1svg className="  w-10/12 h-10/12   xs:h-3/4 xs:mt-20 absolute md:left-[-5%] sm:left-12 xs:left-[-5%] xs:top-[-10%] fill-current xs:ml-16 ml-28 mb-72  bg-transparent" />
+									<Pic1svg className="  w-10/12 h-10/12   xs:h-3/4 xs:mt-20 absolute xl:left-[6%] md:left-[-5%] sm:left-12 xs:left-[-5%] xs:top-[-15%] fill-current xs:ml-16 ml-28 mb-72  bg-transparent" />
 									<img
 										src={firstpic}
 										alt="jasperito"

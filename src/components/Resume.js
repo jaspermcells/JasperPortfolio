@@ -32,11 +32,11 @@ const Resume = () => {
 				Your browser does not support the video tag.
 			</video>
 			<div className="grid justify-center items-center text-center w-full h-full">
-				<div className="absolute  lg:left-[190px] xl:left-[190px] md:left-[12%] sm:left-[0%] xs:left-[-2%] lg:w-3/4 xl:w-3/4 md:w-3/4 sm:w-full xs:w-full h-full font-extrabold font-Preahvihear  mix-blend-difference tracking-wide text-[100px] sm:text-[80px] xs:text-[400%] lg:text-[120px]  text-yellow-300 grid justify-center items-center text-center uppercase  top-[0%]">
-					<div className="mix-blend-normal">
-						Download CV now!
+				<div className="absolute  lg:left-[250px] xl:left-[360px]  md:left-[12%] sm:left-[0%] xs:left-[-2%] lg:w-1/2 xl:w-1/2 md:w-3/4 sm:w-full xs:w-full h-full font-extrabold font-Preahvihear   text-[100px] sm:text-[80px] xs:text-[400%] lg:text-[120px] tracking-tighter  text-yellow-300 grid justify-center items-center justify-items-center justify-self-center text-center uppercase  top-[0%] leading-12  ">
+					<div className="">
+						<div className="mix-blend-difference">Download CV now!</div>
 						<button
-							className="bg-gray-300   lg:w-[30%] xl:w-[25%] xs:w-[200px] md:w-[30%] p-2  lg:left-[38%] md:left-[35%] sm:left-[35%] xs:left-[30%] relative  rounded-sm lg:text-5xl xl:text-6xl grid justify-center items-center hover:bg-blue-900  border-black text-red-600 xs:text-4xl  md:text-4xl bottom-[400%] justify-self-center top-3 px-0"
+							className=" lg:w-[30%] xl:w-[25%] xs:w-[200px] md:w-[30%] p-2  lg:left-[37%] md:left-[35%] sm:left-[35%] xs:left-[30%] relative   lg:text-4xl xl:text-4xl py-5 grid justify-center items-center hover:contrast-125  text-yellow-600 xs:text-4xl  md:text-4xl bottom-[400%] justify-self-center top-3 px-0 tracking-normal animate-bounce accent-amber-700 bg-transparent  outline-black ring-2 outline-offset-0 ring-offset-white ring-black rounded-3xl border-black drop-shadow-xl backdrop-blur-lg backdrop-brightness-100 backdrop-hue-rotate-180"
 							onClick={handleDownload}
 						>
 							Click me

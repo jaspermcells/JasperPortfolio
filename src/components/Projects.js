@@ -32,7 +32,7 @@ const Projects = () => {
 			id="Projects"
 			className=" lg:w-[60%] xl:w-[60%] xs:w-[80%] h-full text-5xl grid justify-center text-center items-center font-Preahvihear uppercase text-yellow-400 gap-12 justify-items-center  relative "
 		>
-			<h1 className="mb-10 text-slate-100 mt-40 text-7xl"> Projects</h1>
+			<h1 className="mb-10 text-slate-100 mt-40 text-[56px]"> Projects</h1>
 			<ProjectsCard data={data} />
 		</div>
 	);
